@@ -1,0 +1,126 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,300&display=swap');
+
+body{
+    background-color: #222435;
+    font-family: 'Chakra Petch', sans-serif;
+}
+h1{
+    font-family: 'Arial', sans-serif;
+    font-weight: 900;
+    color: #2b347c;
+    text-align: center;
+}
+form{
+    display: flex;
+    position: relative;
+    width: 600px;
+    height: 60px;    
+    margin: 30px auto;
+    margin-bottom: 60px;
+}
+input{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: #3d3e47;
+    border: none;
+    padding-left: 30px;
+    font-size: 16px;
+    border-radius: 10px;
+    color: #ffffff;
+}
+button.add{
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #120580;
+    color: white;
+    cursor: pointer;
+    padding: 10px 25px;
+    height: 62px;
+    border-top-right-radius: 10px;
+}
+button.add:hover{
+    background-color:#230842 ;
+    
+}
+.lista_tarefas{
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    width: 600px;
+    margin: 0 auto;
+}.item{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #2f89ff;
+    color: #ffffff;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.item:hover{
+    background-color: #3d3e47;
+}
+.item span{
+    text-align: start ;
+    width: 100%;
+    color: #ffffff;
+    margin-right: 10px;
+    padding: 10px 15px;
+}
+.item.completo{
+    display: flex;
+    justify-content: space-between;
+    background-color: #1e1f2e;
+    color: #ffffff;
+    border: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.item.completo span{
+    width: 100%;
+    color: #4d506e;
+    text-decoration: line-through;
+    margin-right: 10px;
+    padding: 10px 15px;
+    opacity: 0.6;
+}
+button.del{
+    border: none;
+    background: none;
+    color: #9b1402;
+    padding: 15px;
+    cursor: pointer;
+}
+button.del:hover{
+    border: none;
+    background-color: #9b103a;
+    color: #ffffff;
+    padding: 15px;
+    cursor: pointer;
+}
+button.deleteall{
+    border: 1px solid red;
+    background-color: #9b103a;
+    padding:15px;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 10px;
+}
+button.deleteall:hover{
+    cursor: pointer;
+    background-color: #ff004c;
+    color: #ffffff;
+}
+.icon{
+    max-width: 100%;
+}
+@media  screen and(max-width:900px) {
+    form{width: 100%;}
+    .lista_tarefas{
+        width: 100%;
+    }
+}
+
